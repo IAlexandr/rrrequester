@@ -2,18 +2,23 @@ const optionsSpec = {
   port: {
     required: true,
     default: '8099',
-    env: '_PORT'
+    env: 'RRREQ_PORT'
   },
   logLevel: {
     required: true,
     default: 'console', // console, db/ws??
-    env: '_LOG_LEVEL'
+    env: 'RRREQ_LOG_LEVEL'
   },
   debug: {
     required: false,
     default: 'true',
-    env: '_DEBUG'
-  }
+    env: 'RRREQ_DEBUG'
+  },
+  mongoDbUrl: {
+    required: true,
+    default: 'mongodb://si-sdsql:27017/parcels',
+    env: 'RRREQ_MONGODBURL'
+  },
 };
 
 export default Object.keys(optionsSpec).map((key) => {
