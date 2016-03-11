@@ -1,12 +1,15 @@
 {
   "name": "template",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "eslint lib/",
     "start": "npm run test && node index"
   },
+  "pre-commit": [
+    "test"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/IAlexandr/template.git"
@@ -26,6 +29,7 @@
   },
   "devDependencies": {
     "eslint": "^1.10.3",
-    "eslint-config-airbnb": "^5.0.0"
+    "eslint-config-airbnb": "^5.0.0",
+    "pre-commit": "^1.1.2"
   }
 }
