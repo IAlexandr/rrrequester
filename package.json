@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "eslint lib/",
-    "start": "npm run test && node index"
+    "start": "node index"
   },
   "pre-commit": [
     "test"
