@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "eslint src/",
-    "start": "node index"
+    "test": "eslint lib/",
+    "start": "npm run test && node index"
   },
   "repository": {
     "type": "git",
