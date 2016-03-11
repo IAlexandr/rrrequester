@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "test": "eslint src/",
     "start": "node index"
   },
   "repository": {
@@ -22,5 +23,9 @@
     "babel-register": "^6.7.2",
     "body-parser": "^1.15.0",
     "express": "^4.13.4"
+  },
+  "devDependencies": {
+    "eslint": "^1.10.3",
+    "eslint-config-airbnb": "^5.0.0"
   }
 }
