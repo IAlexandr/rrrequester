@@ -4,6 +4,11 @@ const optionsSpec = {
     default: '8099',
     env: 'RRREQ_PORT'
   },
+  rrrNodeAddress: {
+    required: true,
+    default: 'http://10.10.10.148:8080',
+    env: 'RRREQ_PORT'
+  },
   logLevel: {
     required: true,
     default: 'console', // console, db/ws??
